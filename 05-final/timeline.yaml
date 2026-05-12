@@ -1,0 +1,20 @@
+project:
+  name: ""
+  output: ""
+  aspect_ratio: "9:16"
+  fps: 30
+  resolution: "1080x1920"
+  storyboard_preview: "05-final/storyboard-preview.html"
+
+timeline:
+  # Example:
+  # - scene: "scene-001-hook-example"
+  #   title: "Hook Example"
+  #   purpose: "Stop attention in the first 3 seconds"
+  #   duration: 3
+  #   first_frame: "../03-scenes/scene-001-hook-example/first-frame/example_scene001_first-frame_SELECTED.png"
+  #   last_frame: "../03-scenes/scene-001-hook-example/last-frame/example_scene001_last-frame_SELECTED.png"
+  #   video: "../03-scenes/scene-001-hook-example/generated-videos/example_scene001_video_SELECTED.mp4"
+  #   text_overlay: "New matcha just dropped"
+  #   voiceover: "Something refreshing is here."
+  #   notes: "Use this as the opening hook."
