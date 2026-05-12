@@ -17,24 +17,50 @@ You are helping the user turn a video idea into:
 
 Follow this order:
 
+### Phase 1 — Brief
+
 1. Read `00-brief/`
-2. Identify missing information and write it in `01-ideas/missing-information.md`
-3. Generate creative ideas and write them in `01-ideas/idea-bank.md`
-4. Help the user choose one idea and save it in `01-ideas/selected-idea.md`
-5. Create the storyboard in `02-storyboard/storyboard.md`
-6. Create shot list in `02-storyboard/shot-list.md`
-7. Create timing plan in `02-storyboard/timing-plan.md`
-8. Create scene folders by copying `03-scenes/scene-000-template/`
-9. Fill each scene folder with scene brief and prompts
-10. Use generation tools to generate images/videos/audio for each scene
-11. Save generated scene files inside the relevant scene folder
-12. Mark selected assets by adding `_SELECTED` to the filename
-13. Use selected scene videos to write `05-final/timeline.yaml`
-14. Assemble final video into `05-final/final-video/`
-15. Create thumbnail candidates in `05-final/thumbnails/`
-16. Create captions in `05-final/captions/`
-17. Create posting copy in `05-final/posting-copy/`
-18. Prepare handoff files in `05-final/client-handoff/`
+2. Check if the brief is complete enough to proceed
+3. If gaps exist, write them in `01-ideas/missing-information.md` and **stop — ask the user to fill the gaps before continuing**
+4. Once the brief is complete, proceed
+
+### Phase 2 — Ideas
+
+5. Generate creative ideas and write them in `01-ideas/idea-bank.md`
+6. Present ideas to the user and wait for selection
+7. Save the chosen direction in `01-ideas/selected-idea.md`
+
+### Phase 3 — Storyboard
+
+8. Create the storyboard in `02-storyboard/storyboard.md`
+9. Create shot list in `02-storyboard/shot-list.md`
+10. Create timing plan in `02-storyboard/timing-plan.md`
+
+### Phase 4 — Scenes (repeat for each scene)
+
+11. Create scene folder by copying `03-scenes/scene-000-template/`
+12. Fill `scene-brief.md` and all prompts in `prompts/`
+13. Reference source materials from `04-assets/` where relevant
+14. Generate first-frame and last-frame candidates into `first-frame/` and `last-frame/`
+15. Use selected first/last frames to generate the scene video
+16. Generate images into `generated-images/`
+17. Generate videos into `generated-videos/`
+18. Generate audio into `generated-audio/`
+19. User marks selected files with `_SELECTED` in the filename
+20. Repeat steps 11–19 for each remaining scene
+
+### Phase 5 — Assembly
+
+21. Build `05-final/timeline.yaml` using only `_SELECTED` scene videos
+22. Optionally render `05-final/storyboard-preview.html` for visual review
+23. Assemble final video into `05-final/final-video/`
+
+### Phase 6 — Delivery
+
+24. Create thumbnail candidates in `05-final/thumbnails/`
+25. Create captions in `05-final/captions/`
+26. Create posting copy in `05-final/posting-copy/`
+27. Prepare handoff files in `05-final/client-handoff/`
 
 ## Folder Rules
 
