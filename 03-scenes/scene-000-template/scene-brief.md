@@ -40,14 +40,6 @@ Example: Hook attention, explain context, show product, build proof, or close wi
 
 -
 
-## Text Overlay
-
--
-
-## Voiceover
-
--
-
 ## Notes
 
 -

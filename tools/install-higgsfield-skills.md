@@ -40,15 +40,15 @@ Ask your AI agent:
 
 ```txt
 Generate an image with Higgsfield using the prompt in:
-03-scenes/scene-001-hook-example/prompts/image-prompt.md
+03-scenes/scene-001-hook-example/prompts/first-frame-prompt.md
 ```
 
 or:
 
 ```txt
 Generate a video with Higgsfield using:
-- first frame from the scene first-frame folder
-- last frame from the scene last-frame folder
+- first frame from the scene attempt folder
+- optional last frame from the scene attempt folder
 - video prompt from the scene prompts folder
 ```
 
@@ -57,11 +57,13 @@ Generate a video with Higgsfield using:
 Save generated scene files into the matching scene folder:
 
 ```txt
-03-scenes/<scene-name>/generated-images/
-03-scenes/<scene-name>/generated-videos/
-03-scenes/<scene-name>/generated-audio/
+03-scenes/<scene-name>/attempt_01/01_first_frame/
+03-scenes/<scene-name>/attempt_01/02_last_frame/
+03-scenes/<scene-name>/attempt_01/03_generated_video/
 ```
 
 Do not save generated scene files into `04-assets/`.
 
 `04-assets/` is only for source materials provided by the user/client.
+
+If the selected Higgsfield model supports audio, include audio direction from `prompts/video-prompt.md`. If Higgsfield returns usable audio inside a generated video, keep it with that video.

@@ -12,9 +12,8 @@ timeline:
   #   title: "Hook Example"
   #   purpose: "Stop attention in the first 3 seconds"
   #   duration: 3
-  #   first_frame: "../03-scenes/scene-001-hook-example/first-frame/example_scene001_first-frame_SELECTED.png"
-  #   last_frame: "../03-scenes/scene-001-hook-example/last-frame/example_scene001_last-frame_SELECTED.png"
-  #   video: "../03-scenes/scene-001-hook-example/generated-videos/example_scene001_video_SELECTED.mp4"
-  #   text_overlay: "New matcha just dropped"
-  #   voiceover: "Something refreshing is here."
+  #   attempt: "attempt_01"
+  #   first_frame: "../03-scenes/scene-001-hook-example/attempt_01/01_first_frame/example_scene001_first-frame_v001.png"
+  #   last_frame: "../03-scenes/scene-001-hook-example/attempt_01/02_last_frame/example_scene001_last-frame_v001.png"
+  #   video: "../03-scenes/scene-001-hook-example/attempt_01/03_generated_video/example_scene001_video_v001.mp4"
   #   notes: "Use this as the opening hook."

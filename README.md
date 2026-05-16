@@ -8,9 +8,9 @@ This template helps you turn a video idea into:
 2. Creative ideas
 3. A storyboard
 4. Scene-by-scene prompts
-5. Generated scene images/videos/audio
+5. First-frame candidates and generated scene videos
 6. A final assembled video
-7. Thumbnails, captions, posting copy, and client handoff files
+7. Thumbnails and captions
 
 ## Core Workflow
 
@@ -37,8 +37,8 @@ flowchart TD
     shot-list.md
     timing-plan.md`"]
 
-    STORY --> COPY["`**AI** copies scene-000-template
-    for each scene`"]
+    STORY --> COPY["`**AI** creates all scene folders
+    from storyboard`"]
 
     COPY --> SCENE_START
 
@@ -48,20 +48,19 @@ flowchart TD
 
         ASSETS[("`**04-assets/**
         logos · brand
-        source media`")]
+        source images · logos
+        brand · documents`")]
 
         ASSETS -. reference .-> SCENE_START
 
-        SCENE_START --> FRAMES["`Generate first-frame /
-        last-frame candidates`"]
-        FRAMES --> GEN_IMG["`**Generation tool**
-        → generated-images/`"]
-        GEN_IMG --> GEN_VID["`**Generation tool**
-        → generated-videos/`"]
-        GEN_VID --> GEN_AUD["`**Generation tool**
-        → generated-audio/`"]
-        GEN_AUD --> PICK(["`**User** marks
-        filename_SELECTED`"])
+        SCENE_START --> ATTEMPT["`Create attempt_01 /
+        attempt_02 as needed`"]
+        ATTEMPT --> FRAMES["`Generate first-frame
+        and optional last-frame`"]
+        FRAMES --> GEN_VID["`**Generation tool**
+        → 03_generated_video/`"]
+        GEN_VID --> PICK(["`Timeline points to
+        accepted attempt`"])
     end
 
     PICK --> MORE{More\nscenes?}
@@ -81,8 +80,6 @@ flowchart TD
     subgraph DELIVERY["📦  Delivery"]
         THUMB["`thumbnails/`"]
         CAPTIONS["`captions/`"]
-        COPY2["`posting-copy/`"]
-        HANDOFF["`client-handoff/`"]
     end
 
     DELIVERY --> DONE(["`✅ Done`"])
@@ -96,22 +93,33 @@ flowchart TD
 | `01-ideas/`      | AI-generated ideas, selected idea, and missing information                  |
 | `02-storyboard/` | Storyboard, shot list, and timing plan                                      |
 | `03-scenes/`     | Scene folders, prompts, first/last frames, generated scene files            |
-| `04-assets/`     | Source materials provided by the user/client                                |
-| `05-final/`      | Final combined video, thumbnails, captions, posting copy, and handoff files |
-| `skills/`        | Local workflow skills for future automation                                 |
+| `04-assets/`     | Source materials and reusable product reference images                      |
+| `05-final/`      | Final combined video, thumbnails, and captions                              |
+| `.agents/workflows/` | Workflow instructions referenced by `AGENTS.md`                         |
+| `.agents/skills/`        | Local workflow skills for future automation                                 |
 | `tools/`         | Setup notes and external tool installation guidance                         |
 
 ## Important Rule
 
-`04-assets/` is for source files only.
+`04-assets/` is for source files and reusable product references only.
 
-Generated scene files should go inside the relevant scene folder:
+Generated product reference angles can go in:
 
 ```txt
-03-scenes/scene-001-example/generated-images/
-03-scenes/scene-001-example/generated-videos/
-03-scenes/scene-001-example/generated-audio/
+04-assets/references/
 ```
+
+Scene outputs still belong in scene attempt folders.
+
+Generated scene videos should go inside the relevant scene folder:
+
+```txt
+03-scenes/scene-001-example/attempt_01/03_generated_video/
+```
+
+First frames are required for each scene. Last frames have prompts by default, but are optional during video generation.
+
+Do not create separate scene audio by default. If the selected video model supports audio, include audio direction in the video prompt. If the video generation tool returns usable audio inside the video, keep it with that generated video.
 
 Final combined outputs should go into:
 
@@ -121,50 +129,38 @@ Final combined outputs should go into:
 
 ## Scene Creation
 
-Do not create scene folders manually from scratch.
-
-Copy:
-
-```txt
-03-scenes/scene-000-template/
-```
-
-Then rename it:
-
-```txt
-03-scenes/scene-001-hook-example/
-03-scenes/scene-002-context-example/
-03-scenes/scene-003-main-message-example/
-```
-
-Or use the helper script:
+Do not create scene folders manually from scratch. Use the storyboard automation script:
 
 ```bash
-python skills/create-scene-from-template/scripts/create_scene.py --number 1 --name "hook-matcha-pour"
+uv run python .agents/skills/create-scenes-from-storyboard/scripts/create_scenes_from_storyboard.py
 ```
 
-## Selection Rule
+## Attempt Rule
 
-Use filename versioning.
+Use attempt folders as the revision and approval mechanism.
 
 Examples:
 
 ```txt
-scene001_hook_image_v001.png
-scene001_hook_image_v002.png
-scene001_hook_image_SELECTED.png
+attempt_01/01_first_frame/scene001_hook_first-frame_v001.png
+attempt_01/02_last_frame/scene001_hook_last-frame_v001.png
+attempt_01/03_generated_video/scene001_hook_video_v001.mp4
 ```
 
-When a file is selected for final use, include `_SELECTED` in the filename.
+When the user asks for a revision, copy the latest attempt to the next attempt:
 
-The final timeline should use `_SELECTED` files.
+```bash
+uv run python .agents/skills/create-next-attempt/scripts/create_next_attempt.py 03-scenes/scene-001-example
+```
+
+Ask the user which attempt is acceptable. The final timeline should point to the accepted attempt and chosen video.
 
 ## Storyboard HTML Preview
 
 Render `05-final/timeline.yaml` into a browser-friendly storyboard preview:
 
 ```bash
-python skills/render-storyboard-html/scripts/render_storyboard_html.py \
+uv run python .agents/skills/render-storyboard-html/scripts/render_storyboard_html.py \
   --timeline 05-final/timeline.yaml \
   --output 05-final/storyboard-preview.html
 ```
@@ -176,7 +172,7 @@ Then open `05-final/storyboard-preview.html`.
 Open this project in your AI coding tool and ask:
 
 ```txt
-Read AGENTS.md and help me start a new storyboard video project.
+Read AGENTS.md and follow .agents/workflows/onboarding-interview-workflow.md to interview me for a new storyboard video project.
 ```
 
 ## Higgsfield

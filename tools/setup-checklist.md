@@ -11,10 +11,12 @@
 - [ ] Ask the AI to generate ideas
 - [ ] Select one idea
 - [ ] Generate storyboard
-- [ ] Create scene folders from template
+- [ ] Create scene folders from storyboard automation
 - [ ] Generate prompts for each scene
-- [ ] Generate scene assets
-- [ ] Mark selected files with `_SELECTED`
+- [ ] Generate first-frame candidates for each scene
+- [ ] Generate last-frame candidates when useful
+- [ ] Generate scene video attempts
+- [ ] Point timeline to the accepted attempt for each scene
 - [ ] Build timeline
 - [ ] Assemble final video
 - [ ] Create thumbnail

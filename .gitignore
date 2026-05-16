@@ -19,6 +19,12 @@ yarn-error.log*
 .env.local
 .env.*.local
 
+# Local secrets and OAuth tokens
+.secrets/
+client_secrets.json
+*-oauth2.json
+token.json
+
 # Large generated media can be ignored if needed
 # Uncomment these if you do not want to commit generated files
 # 03-scenes/**/generated-images/*
