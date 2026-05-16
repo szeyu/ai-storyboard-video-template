@@ -1,19 +1,56 @@
 project:
-  name: ""
-  output: ""
+  name: "Hoppers Tom Lizard Blind Box Ad"
+  output: "tom-lizard-blind-box-ad_v001.mp4"
   aspect_ratio: "9:16"
   fps: 30
   resolution: "1080x1920"
   storyboard_preview: "05-final/storyboard-preview.html"
 
 timeline:
-  # Example:
-  # - scene: "scene-001-hook-example"
-  #   title: "Hook Example"
-  #   purpose: "Stop attention in the first 3 seconds"
-  #   duration: 3
-  #   attempt: "attempt_01"
-  #   first_frame: "../03-scenes/scene-001-hook-example/attempt_01/01_first_frame/example_scene001_first-frame_v001.png"
-  #   last_frame: "../03-scenes/scene-001-hook-example/attempt_01/02_last_frame/example_scene001_last-frame_v001.png"
-  #   video: "../03-scenes/scene-001-hook-example/attempt_01/03_generated_video/example_scene001_video_v001.mp4"
-  #   notes: "Use this as the opening hook."
+  - scene: "scene-001-hook-normal-tom"
+    title: "Hook — Normal Tom"
+    purpose: "Stop the scroll"
+    duration: 4
+    attempt: "attempt_01"
+    video: "../03-scenes/scene-001-hook-normal-tom/attempt_01/03_generated_video/video_v001.mp4"
+    notes: "Trim to ~2s in post if needed"
+
+  - scene: "scene-002-donuts-donut-tom"
+    title: "Donuts — Donut Tom"
+    purpose: "Establish want"
+    duration: 5
+    attempt: "attempt_01"
+    video: "../03-scenes/scene-002-donuts-donut-tom/attempt_01/03_generated_video/video_v001.mp4"
+    notes: "Step 1 snacks"
+
+  - scene: "scene-003-excitement-forward-tongue-tom"
+    title: "Excitement — Forward Tongue Tom"
+    purpose: "Rising energy"
+    duration: 5
+    attempt: "attempt_01"
+    video: "../03-scenes/scene-003-excitement-forward-tongue-tom/attempt_01/03_generated_video/video_v001.mp4"
+    notes: "Step 2 HYPE"
+
+  - scene: "scene-004-act-cute-x-eyes-tom"
+    title: "Act Cute — X Eyes Tom"
+    purpose: "Climax build"
+    duration: 5
+    attempt: "attempt_01"
+    video: "../03-scenes/scene-004-act-cute-x-eyes-tom/attempt_01/03_generated_video/video_v001.mp4"
+    notes: "Step 3 too cute"
+
+  - scene: "scene-005-peak-scream-lookup-tongue-tom"
+    title: "Peak Scream — Lookup Tongue Tom"
+    purpose: "Peak moment"
+    duration: 4
+    attempt: "attempt_01"
+    video: "../03-scenes/scene-005-peak-scream-lookup-tongue-tom/attempt_01/03_generated_video/video_v001.mp4"
+    notes: "Step 4 LOSE IT"
+
+  - scene: "scene-006-cta-all-5-lineup"
+    title: "CTA — All 5 Lineup"
+    purpose: "Drive Shopee click"
+    duration: 5
+    attempt: "attempt_02"
+    video: "../03-scenes/scene-006-cta-all-5-lineup/attempt_02/03_generated_video/video_v001.mp4"
+    notes: "Kling version with hand placing box. Add text overlay in post."

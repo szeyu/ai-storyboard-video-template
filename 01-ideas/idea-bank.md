@@ -1,9 +1,7 @@
-# Idea Bank
-
-Use this file to store possible creative directions.
+# Idea Bank — Hoppers Tom Lizard Blind Box
 
 | Idea ID | Idea Name | Hook | Target Emotion | Visual Direction | Why It Could Work |
 |---|---|---|---|---|---|
-| I001 |  |  |  |  |  |
-| I002 |  |  |  |  |  |
-| I003 |  |  |  |  |  |
+| I001 | "Which Tom Are You?" | "POV: you are one of these 5 Toms 🦎" | Self-identification, LOL | Rapid-fire cuts, each Tom with relatable mood caption (e.g. Tongue Tom = Monday mood, Donut Tom = snack mode, Hidden Tom = main character energy). End: "But which one will you GET?" + Shopee CTA | Collectors share/comment their Tom personality. Viral comment bait. Fast pacing keeps 15s tight. |
+| I002 | "Tom's Big Day" | Opens on Plain Tom alone. Text: "Tom had a plan." | Cute storytelling, suspense | Mini story arc: Tom wakes up → smells donuts (Donut Tom) → gets excited (Tongue Tom) → dresses up (Beret Tom) → unlocks final form (Hidden Edition reveal with flash). End: "Which Tom lives in YOUR box?" + Shopee CTA | Narrative arc = higher watch completion. Hidden edition reveal = dopamine spike. Encourages repeat viewing. |
+| I003 | "I Got the HIDDEN One?!" | POV unboxing. Hands open orange blind box, pulls figure. Text: "Wait... is that—" | Suspense, FOMO, excitement | Live-action style. Open box 1 → plain Tom. Open box 2 → Tongue Tom. Open box 3 → flash of pink... HIDDEN EDITION REVEAL. Confetti, sound effect. End: "Your turn. Shop now." + Shopee link | Unboxing suspense = most viral blind box format. Hidden edition FOMO drives immediate purchase intent. Directly mirrors buyer journey. |

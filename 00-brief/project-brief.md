@@ -1,55 +1,45 @@
-# Project Brief
+# Project Brief — Hoppers Tom Lizard Blind Box Ad
 
 ## Project Name
+Hoppers Tom Lizard Blind Box — YouTube Shorts Ad
 
-Example: Matcha Launch Video
+## Affiliate Link
+https://s.shopee.com.my/6L1JznwBfD
 
 ## What are we making?
+15-second vertical YouTube Shorts ad for Hoppers Tom Lizard Blind Box figures. Storyline-driven, cute and kawaii. Goal is to drive Shopee clicks from collectors.
 
-Example: A 15-second vertical video for a new matcha drink.
+## Product Details
+4 standard types + 1 hidden edition = 5 total figures.
+
+| # | Name | Description |
+|---|------|-------------|
+| 1 | Plain Tom | Wide-eyed, mouth open, standing |
+| 2 | Donut Tom | Holding pink donuts over eyes |
+| 3 | Tongue Tom | Tongue sticking out dramatically |
+| 4 | Beret Tom | Pink beret, tongue out |
+| 5 | Hidden Edition | Pink sunglasses (secret / rare) |
 
 ## Main Message
-
-Example: A refreshing premium matcha drink made for young cafe lovers.
+Tom Lizard has a story — each figure is a different side of his personality. Collectors need all 5. The hidden edition is the prize.
 
 ## Platform
-
-- TikTok
-- Instagram Reels
-- YouTube Shorts
-- LinkedIn
-- Website
-- Other:
+YouTube Shorts (9:16 vertical)
 
 ## Duration
-
-Example: 15 seconds / 30 seconds / 60 seconds
+15 seconds
 
 ## Style
-
-Example:
-
-- UGC
-- cinematic
-- premium
-- funny
-- educational
-- documentary
-- corporate
-- product-focused
+Cute, kawaii, personality-driven. Story-based. Not salesy.
 
 ## Must Include
-
-- 
-- 
-- 
+- All 5 figures shown or teased (hidden edition = reveal moment)
+- Shopee CTA at end
+- Blind box / mystery element highlighted
 
 ## Must Avoid
-
-- 
-- 
-- 
+- Hard sell / price-focused messaging
+- Generic product showcase without story
 
 ## Notes
-
-Add any extra context here.
+Source images in `04-assets/source-images/`: `alltype.webp`, `alltype2.webp`
