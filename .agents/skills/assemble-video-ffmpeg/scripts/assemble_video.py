@@ -75,7 +75,10 @@ def normalize_clip(
         "medium",
         "-crf",
         "20",
-        "-an",
+        "-c:a",
+        "aac",
+        "-b:a",
+        "192k",
         str(output_path),
     ]
     subprocess.run(command, check=True)

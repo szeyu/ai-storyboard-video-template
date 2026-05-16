@@ -6,7 +6,7 @@ import shutil
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[3]
+REPO_ROOT = Path(__file__).resolve().parents[4]
 TEMPLATE_DIR = REPO_ROOT / "03-scenes" / "scene-000-template"
 SCENES_DIR = REPO_ROOT / "03-scenes"
 SHOT_LIST = REPO_ROOT / "02-storyboard" / "shot-list.md"
