@@ -29,7 +29,7 @@ Opens a browser. Takes 5 seconds. You are now authenticated.
 ## Step 3 — Add Higgsfield Skills to Your Agent
 
 ```bash
-npx skills add higgsfield-ai/skills1
+npx skills add higgsfield-ai/skills
 ```
 
 Works with Claude Code, Cursor, Codex, and 12+ other agents.
