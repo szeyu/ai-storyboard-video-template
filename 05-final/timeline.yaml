@@ -12,6 +12,7 @@ timeline:
     purpose: "Stop the scroll"
     duration: 4
     attempt: "attempt_01"
+    first_frame: "../03-scenes/scene-001-hook-normal-tom/attempt_01/01_first_frame/first_frame_v001.png"
     video: "../03-scenes/scene-001-hook-normal-tom/attempt_01/03_generated_video/video_v001.mp4"
     notes: "Trim to ~2s in post if needed"
 
@@ -20,6 +21,7 @@ timeline:
     purpose: "Establish want"
     duration: 5
     attempt: "attempt_01"
+    first_frame: "../03-scenes/scene-002-donuts-donut-tom/attempt_01/01_first_frame/first_frame_v001.png"
     video: "../03-scenes/scene-002-donuts-donut-tom/attempt_01/03_generated_video/video_v001.mp4"
     notes: "Step 1 snacks"
 
@@ -28,6 +30,7 @@ timeline:
     purpose: "Rising energy"
     duration: 5
     attempt: "attempt_01"
+    first_frame: "../03-scenes/scene-003-excitement-forward-tongue-tom/attempt_01/01_first_frame/first_frame_v001.png"
     video: "../03-scenes/scene-003-excitement-forward-tongue-tom/attempt_01/03_generated_video/video_v001.mp4"
     notes: "Step 2 HYPE"
 
@@ -36,6 +39,7 @@ timeline:
     purpose: "Climax build"
     duration: 5
     attempt: "attempt_01"
+    first_frame: "../03-scenes/scene-004-act-cute-x-eyes-tom/attempt_01/01_first_frame/first_frame_v002.png"
     video: "../03-scenes/scene-004-act-cute-x-eyes-tom/attempt_01/03_generated_video/video_v001.mp4"
     notes: "Step 3 too cute"
 
@@ -44,6 +48,7 @@ timeline:
     purpose: "Peak moment"
     duration: 4
     attempt: "attempt_01"
+    first_frame: "../03-scenes/scene-005-peak-scream-lookup-tongue-tom/attempt_01/01_first_frame/first_frame_v004.png"
     video: "../03-scenes/scene-005-peak-scream-lookup-tongue-tom/attempt_01/03_generated_video/video_v001.mp4"
     notes: "Step 4 LOSE IT"
 
@@ -52,5 +57,7 @@ timeline:
     purpose: "Drive Shopee click"
     duration: 5
     attempt: "attempt_02"
+    first_frame: "../03-scenes/scene-006-cta-all-5-lineup/attempt_01/01_first_frame/first_frame_v001.png"
+    last_frame: "../03-scenes/scene-006-cta-all-5-lineup/attempt_02/02_last_frame/last_frame_v001.png"
     video: "../03-scenes/scene-006-cta-all-5-lineup/attempt_02/03_generated_video/video_v001.mp4"
     notes: "Kling version with hand placing box. Add text overlay in post."
